@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: gsyn_dim
+    database: gsyn_db
+    schema: gsyn_dim
+    tables:
+      - name: fiscal_calendar
+
+  - name: gsyn_fct
+    database: gsyn_db
+    schema: gsyn_fct
+    tables:
+      - name: sales_transactions

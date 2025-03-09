@@ -1,0 +1,139 @@
+[0m15:40:48.364483 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001772E9D5ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177309324A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177309322C0>]}
+
+
+============================== 15:40:48.448358 | 3330b37a-15d4-4700-bfec-dd76330b40e9 ==============================
+[0m15:40:48.448358 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:40:48.449830 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\veere\\.dbt', 'log_path': 'C:\\Users\\veere\\gsyn_data_project\\logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run -s mview_weekly_sales', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:40:53.029412 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '3330b37a-15d4-4700-bfec-dd76330b40e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177309049A0>]}
+[0m15:40:53.112302 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '3330b37a-15d4-4700-bfec-dd76330b40e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001772ECFE320>]}
+[0m15:40:53.112302 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m15:40:54.893561 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:40:54.893561 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:40:54.893561 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '3330b37a-15d4-4700-bfec-dd76330b40e9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001773132FD60>]}
+[0m15:40:58.950748 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.gsyn_data_project.mview_weekly_sales' (models\gsyn_dbt\mview_weekly_sales.sql) depends on a source named 'gsyn_fct.sales_transactions' which was not found
+[0m15:40:58.950748 [debug] [MainThread]: Command `dbt run` failed at 15:40:58.950748 after 10.91 seconds
+[0m15:40:58.950748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001772E9D5ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177317AD5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000177317AD540>]}
+[0m15:40:58.950748 [debug] [MainThread]: Flushing usage events
+[0m15:41:00.644212 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:41:46.652584 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B226A9EA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B24609BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B24609DB0>]}
+
+
+============================== 15:41:46.658210 | 4311ffe4-f6d8-4198-a13b-d946208802b1 ==============================
+[0m15:41:46.658210 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:41:46.659096 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\veere\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\veere\\gsyn_data_project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt run -s mview_weekly_sales', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:41:47.316354 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4311ffe4-f6d8-4198-a13b-d946208802b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B20F0DC90>]}
+[0m15:41:47.398583 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4311ffe4-f6d8-4198-a13b-d946208802b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B24475810>]}
+[0m15:41:47.398583 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m15:41:47.829744 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:41:47.831478 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:41:47.831478 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '4311ffe4-f6d8-4198-a13b-d946208802b1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B24FFE2F0>]}
+[0m15:41:49.647710 [error] [MainThread]: Encountered an error:
+Compilation Error
+  Model 'model.gsyn_data_project.mview_weekly_sales' (models\gsyn_dbt\mview_weekly_sales.sql) depends on a source named 'gsyn_fct.sales_transactions' which was not found
+[0m15:41:49.650364 [debug] [MainThread]: Command `dbt run` failed at 15:41:49.650364 after 3.12 seconds
+[0m15:41:49.651362 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B226A9EA0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B26448C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000029B26448AC0>]}
+[0m15:41:49.651362 [debug] [MainThread]: Flushing usage events
+[0m15:41:50.634917 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:43:34.487617 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B41261F60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B431C9AE0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B431C9CC0>]}
+
+
+============================== 15:43:34.487617 | dd779c1a-ff18-46d1-b047-793fcc672204 ==============================
+[0m15:43:34.487617 [info ] [MainThread]: Running with dbt=1.9.3
+[0m15:43:34.487617 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\veere\\.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'C:\\Users\\veere\\gsyn_data_project\\logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'invocation_command': 'dbt run -s mview_weekly_sales', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:43:35.357138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'dd779c1a-ff18-46d1-b047-793fcc672204', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3FAD5C00>]}
+[0m15:43:35.455301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'dd779c1a-ff18-46d1-b047-793fcc672204', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B43AA0070>]}
+[0m15:43:35.455301 [info ] [MainThread]: Registered adapter: snowflake=1.9.2
+[0m15:43:35.954604 [debug] [MainThread]: checksum: 5671c00892cdbcef29c3b00cc5ba7510c3d18a35c883caeb9ab9ee266dc29c8f, vars: {}, profile: , target: , version: 1.9.3
+[0m15:43:35.954604 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:43:35.954604 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'dd779c1a-ff18-46d1-b047-793fcc672204', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B42C7FA00>]}
+[0m15:43:38.569068 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'dd779c1a-ff18-46d1-b047-793fcc672204', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B452C0100>]}
+[0m15:43:38.734511 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\veere\gsyn_data_project\target\manifest.json
+[0m15:43:38.984290 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\veere\gsyn_data_project\target\semantic_manifest.json
+[0m15:43:40.203083 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'dd779c1a-ff18-46d1-b047-793fcc672204', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B453225F0>]}
+[0m15:43:40.203083 [info ] [MainThread]: Found 3 models, 4 data tests, 2 sources, 474 macros
+[0m15:43:40.217129 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dd779c1a-ff18-46d1-b047-793fcc672204', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B45322860>]}
+[0m15:43:40.225127 [info ] [MainThread]: 
+[0m15:43:40.227139 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:43:40.228732 [info ] [MainThread]: 
+[0m15:43:40.235145 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m15:43:40.308890 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_gsyn_db'
+[0m15:43:41.311064 [debug] [ThreadPool]: Using snowflake connection "list_gsyn_db"
+[0m15:43:41.313073 [debug] [ThreadPool]: On list_gsyn_db: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "gsyn_data_project", "target_name": "dev", "connection_name": "list_gsyn_db"} */
+show terse schemas in database gsyn_db
+    limit 10000
+[0m15:43:41.316676 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:43:45.081155 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 3.765 seconds
+[0m15:43:45.081155 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_gsyn_db_gsyn_dbt'
+[0m15:43:45.110906 [debug] [ThreadPool]: Using snowflake connection "list_gsyn_db_gsyn_dbt"
+[0m15:43:45.113101 [debug] [ThreadPool]: On list_gsyn_db_gsyn_dbt: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "gsyn_data_project", "target_name": "dev", "connection_name": "list_gsyn_db_gsyn_dbt"} */
+show objects in gsyn_db.gsyn_dbt limit 10000;
+[0m15:43:45.114099 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:43:46.597155 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 1.483 seconds
+[0m15:43:46.598892 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'dd779c1a-ff18-46d1-b047-793fcc672204', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B45322050>]}
+[0m15:43:46.783531 [debug] [Thread-1 (]: Began running node model.gsyn_data_project.mview_weekly_sales
+[0m15:43:46.784525 [info ] [Thread-1 (]: 1 of 1 START sql incremental model gsyn_dbt.mview_weekly_sales ................. [RUN]
+[0m15:43:46.786650 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.gsyn_data_project.mview_weekly_sales'
+[0m15:43:46.787664 [debug] [Thread-1 (]: Began compiling node model.gsyn_data_project.mview_weekly_sales
+[0m15:43:46.798032 [debug] [Thread-1 (]: Writing injected SQL for node "model.gsyn_data_project.mview_weekly_sales"
+[0m15:43:46.841922 [debug] [Thread-1 (]: Began executing node model.gsyn_data_project.mview_weekly_sales
+[0m15:43:46.928279 [debug] [Thread-1 (]: Writing runtime sql for node "model.gsyn_data_project.mview_weekly_sales"
+[0m15:43:46.931895 [debug] [Thread-1 (]: Using snowflake connection "model.gsyn_data_project.mview_weekly_sales"
+[0m15:43:46.931895 [debug] [Thread-1 (]: On model.gsyn_data_project.mview_weekly_sales: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "gsyn_data_project", "target_name": "dev", "node_id": "model.gsyn_data_project.mview_weekly_sales"} */
+create or replace transient table gsyn_db.gsyn_dbt.mview_weekly_sales
+         as
+        (
+
+WITH sales AS (
+    SELECT 
+        st.pos_site_id,
+        st.sku_id,
+        fc.fsclwk_id,
+        st.price_substate_id,
+        st.type,
+        SUM(st.sales_units) AS total_sales_units,
+        SUM(st.sales_dollars) AS total_sales_dollars,
+        SUM(st.discount_dollars) AS total_discount_dollars
+    FROM gsyn_db.gsyn_fct.sales_transactions st
+    JOIN gsyn_db.gsyn_dim.fiscal_calendar fc 
+        ON st.fscldt_id = fc.fscldt_id
+
+    
+
+    GROUP BY st.pos_site_id, st.sku_id, fc.fsclwk_id, st.price_substate_id, st.type
+)
+
+SELECT * FROM sales
+        );
+[0m15:43:46.931895 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m15:43:51.381051 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 4.450 seconds
+[0m15:43:51.399802 [debug] [Thread-1 (]: Applying DROP to: gsyn_db.gsyn_dbt.mview_weekly_sales__dbt_tmp
+[0m15:43:51.411768 [debug] [Thread-1 (]: Using snowflake connection "model.gsyn_data_project.mview_weekly_sales"
+[0m15:43:51.412769 [debug] [Thread-1 (]: On model.gsyn_data_project.mview_weekly_sales: /* {"app": "dbt", "dbt_version": "1.9.3", "profile_name": "gsyn_data_project", "target_name": "dev", "node_id": "model.gsyn_data_project.mview_weekly_sales"} */
+drop view if exists gsyn_db.gsyn_dbt.mview_weekly_sales__dbt_tmp cascade
+[0m15:43:51.711502 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.305 seconds
+[0m15:43:51.756357 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'dd779c1a-ff18-46d1-b047-793fcc672204', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3F8D0580>]}
+[0m15:43:51.756357 [info ] [Thread-1 (]: 1 of 1 OK created sql incremental model gsyn_dbt.mview_weekly_sales ............ [[32mSUCCESS 1[0m in 4.97s]
+[0m15:43:51.756357 [debug] [Thread-1 (]: Finished running node model.gsyn_data_project.mview_weekly_sales
+[0m15:43:51.756357 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:43:51.756357 [debug] [MainThread]: Connection 'list_gsyn_db' was left open.
+[0m15:43:51.756357 [debug] [MainThread]: On list_gsyn_db: Close
+[0m15:43:52.407418 [debug] [MainThread]: Connection 'list_gsyn_db_gsyn_dbt' was left open.
+[0m15:43:52.407418 [debug] [MainThread]: On list_gsyn_db_gsyn_dbt: Close
+[0m15:43:53.005267 [debug] [MainThread]: Connection 'model.gsyn_data_project.mview_weekly_sales' was left open.
+[0m15:43:53.005267 [debug] [MainThread]: On model.gsyn_data_project.mview_weekly_sales: Close
+[0m15:43:53.538650 [info ] [MainThread]: 
+[0m15:43:53.538650 [info ] [MainThread]: Finished running 1 incremental model in 0 hours 0 minutes and 13.30 seconds (13.30s).
+[0m15:43:53.538650 [debug] [MainThread]: Command end result
+[0m15:43:53.632540 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Users\veere\gsyn_data_project\target\manifest.json
+[0m15:43:53.643890 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Users\veere\gsyn_data_project\target\semantic_manifest.json
+[0m15:43:53.663433 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Users\veere\gsyn_data_project\target\run_results.json
+[0m15:43:53.667055 [info ] [MainThread]: 
+[0m15:43:53.676699 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:43:53.676699 [info ] [MainThread]: 
+[0m15:43:53.676699 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m15:43:53.676699 [debug] [MainThread]: Command `dbt run` succeeded at 15:43:53.676699 after 19.30 seconds
+[0m15:43:53.676699 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B41261F60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B45249D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B42559A20>]}
+[0m15:43:53.676699 [debug] [MainThread]: Flushing usage events
+[0m15:43:54.679642 [debug] [MainThread]: An error was encountered while trying to flush usage events

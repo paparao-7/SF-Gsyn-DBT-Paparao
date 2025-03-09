@@ -1,0 +1,13 @@
+gsyn_data_project:
+  outputs:
+    dev:
+      account: uomflcj-si41395
+      database: gsyn_db
+      password: doe
+      role: dba
+      schema: gsyn_dbt
+      threads: 1
+      type: snowflake
+      user: dba_1
+      warehouse: dba_wh
+  target: dev
